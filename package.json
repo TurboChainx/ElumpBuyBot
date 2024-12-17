@@ -1,0 +1,23 @@
+{
+  "name": "telegrambot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "iost.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.3.0",
+    "iost": "^0.1.10",
+    "moment-timezone": "^0.5.31",
+    "mongoose": "^5.13.22",
+    "node-cron": "^2.0.3",
+    "request": "^2.88.2",
+    "telegraf": "^3.33.3",
+    "web3": "^1.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
