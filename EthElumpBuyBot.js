@@ -308,7 +308,7 @@ const sendTelegramNotification = async (walletData) => {
     return; // Exit function if accounts is not an array
   }
   let holders = "";
-  holders += `\n<a href="">🌎🌎🌎 🦣$ELUMP🦣 - TOP 10 RICHLIST 🕵️‍♂️</a>\n\n`;
+  holders += `\n<a href="">🌎🌎🌎 🦣$ELUMP🦣 - TOP 10 RICHLIST 🗽</a>\n\n`;
   richList.forEach((account, index) => {
     const buyer = account._id || "Unknown";
     const truncatedBuyer = truncate(buyer, 20);
@@ -363,7 +363,7 @@ ${holders}    `;
 // Function to control the number of 🪙🐘 pairs and add a newline after every 5 pairs, with a max cap of 1000
 function generateTrophyMirrorPairs(value) {
   let result = "";
-
+  result += "🦅💪 𝓜𝓐𝓖𝓐 💪🦅\n\n";
   // Handle ranges and their prefixes
   if (value <= 100) {
     result += "💫𝓜💫 ";
@@ -383,13 +383,13 @@ function generateTrophyMirrorPairs(value) {
     let deltaValue = value - 100;
     let pairCount = Math.max(Math.floor(deltaValue / pairStep), 1);
     for (let i = 0; i < pairCount; i++) {
-      result += "🪙🐘"; // Add one pair 🪙🐘 at a time
+      result += "🏆🐘"; // Add one pair 🏆🐘 at a time
     }
-    result += "🪙";
+    result += "🏆";
   }
 
   if (value > 300 && value <= 600) {
-    result += "💫𝓜💫 💰🐘💰🐘💰🐘💰\n🌟𝓐🌟 🪙🐘🪙🐘🪙🐘🪙\n";
+    result += "💫𝓜💫 💰🐘💰🐘💰🐘💰\n🌟𝓐🌟 🏆🐘🏆🐘🏆🐘🏆\n";
     result += "💎𝓖💎 ";
     let pairStep = Math.floor(300 / 3);
     let deltaValue = value - 300;
@@ -403,30 +403,18 @@ function generateTrophyMirrorPairs(value) {
   // For values above 600
   if (value > 600 && value <= 1000) {
     result +=
-      "💫𝓜💫 💰🐘💰🐘💰🐘💰\n🌟𝓐🌟 🪙🐘🪙🐘🪙🐘🪙\n💎𝓖💎 💰🦣💰🦣💰🦣💰\n";
+      "💫𝓜💫 💰🐘💰🐘💰🐘💰\n🌟𝓐🌟 🏆🐘🏆🐘🏆🐘🏆\n💎𝓖💎 💰🦣💰🦣💰🦣💰\n";
     result += "💫𝓐💫 ";
     let pairStep = Math.floor(400 / 3);
     let deltaValue = value - 600;
     let pairCount = Math.max(Math.floor(deltaValue / pairStep), 1);
     for (let i = 0; i < pairCount; i++) {
-      result += "🪙🦣"; // Add one pair 🪙🐘 at a time
+      result += "🏆🦣"; // Add one pair 🏆🐘 at a time
     }
-    result += "🪙";
+    result += "🏆";
   }
   // For values above 600
   if (value > 1000) {
-    result += `
-      —̳͟͞͞💗🌺🌺            🌺🌺
-      🌺🌺🌺🌺🌺🌺🌺
-      🌺🌺🌺🌺🌺🌺🌺
-        🌺🌺🌺🌺🌺🌺
-       Λ  🌺🌺🌺🌺🌺
-      ( ˘ᵕ˘  🌺🌺🌺
-      ヽ * つ    ＼     ／
-        U U - ／🎀＼
-        
-        `;
-
     result += "\n💎💫🦣$𝓔𝓛𝓤𝓜𝓟🦣💫💎 \n\n";
     let pairStep = 100;
     let deltaValue = value - 1000;
